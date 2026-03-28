@@ -3,123 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PM Surya Ghar | Authorized Solar Vendor</title>
+    <title>Solar Assam | PM Surya Ghar Authorized Vendor</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .kw-btn.active { background-color: #f97316; color: white; border-color: #f97316; transform: scale(1.05); shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.4); }
-        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .kw-btn.active { background: #f97316; color: white; border-color: #f97316; transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.3); }
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .solar-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
     </style>
 </head>
-<body class="bg-[#F8FAFC] text-slate-900 leading-relaxed">
+<body class="bg-slate-50 text-slate-900">
 
-    <!-- Simple Navigation -->
+    <!-- NAVIGATION -->
     <nav class="fixed top-0 w-full z-50 p-4">
-        <div class="max-w-5xl mx-auto glass-card rounded-2xl p-4 flex justify-between items-center shadow-sm">
-            <div class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-orange-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
-                    </svg>
-                </div>
+        <div class="max-w-6xl mx-auto glass rounded-2xl p-4 flex justify-between items-center shadow-sm">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center text-white font-bold">AS</div>
                 <div>
-                    <span class="block font-extrabold text-blue-950 leading-none">SOLAR VENDOR</span>
-                    <span class="text-[10px] text-orange-600 font-bold uppercase tracking-widest">PM Surya Ghar Yojana</span>
+                    <span class="block font-extrabold text-blue-900 leading-none">ASSAM SOLAR</span>
+                    <span class="text-[10px] text-orange-600 font-bold tracking-widest uppercase">Empaneled PMSG Vendor</span>
                 </div>
             </div>
-            <a href="https://wa.me/91YOUR_PHONE_NUMBER" class="bg-blue-900 text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-blue-800 transition shadow-lg">Free Survey</a>
+            <div class="hidden md:flex gap-6 font-semibold text-sm text-slate-600">
+                <a href="#benefits" class="hover:text-orange-500">Why Us</a>
+                <a href="#works" class="hover:text-orange-500">Our Works</a>
+                <a href="#calc" class="hover:text-orange-500">Subsidy Calc</a>
+            </div>
+            <a href="https://wa.me/91YOUR_PHONE_NUMBER" class="bg-blue-900 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg hover:bg-orange-600 transition-all">Free Survey</a>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <header class="pt-32 pb-12 px-6 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-blue-950 tracking-tight">
-                Get Your Solar Subsidy <br> <span class="text-orange-500">Fast & Guaranteed.</span>
-            </h1>
-            <p class="mt-6 text-slate-500 text-lg">Select your required plant size to see your savings and government subsidy instantly.</p>
+    <!-- HERO SECTION -->
+    <header class="pt-40 pb-20 px-6 solar-gradient text-white overflow-hidden relative">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-blue-500/30 border border-blue-400 text-blue-100 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Authorized APDCL Partner</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold mt-6 leading-tight">Assam's #1 Solar <span class="text-orange-400">Subsidy</span> Expert</h1>
+                <p class="mt-6 text-blue-100 text-lg opacity-90">Helping Assam households get zero electricity bills with the PM Surya Ghar Yojana. We handle registration to installation.</p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#calc" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-2xl transition-all">Calculate My Subsidy</a>
+                    <div class="flex items-center gap-3 bg-white/10 px-6 py-4 rounded-2xl">
+                        <span class="text-2xl font-bold">₹0</span>
+                        <span class="text-xs leading-none opacity-70">Upfront Survey<br>Cost</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1509391366360-fe5bb6583e2c?q=80&w=1000" class="rounded-[3rem] shadow-2xl border-8 border-white/10 rotate-2 hover:rotate-0 transition-transform duration-500" alt="Solar Installation">
+            </div>
         </div>
     </header>
 
-    <!-- Interactive Selection Section -->
-    <section class="pb-20 px-6">
-        <div class="max-w-5xl mx-auto">
-            <!-- KW Selection Grid -->
-            <div class="grid grid-cols-3 md:grid-cols-6 gap-3 mb-10" id="kwSelector">
-                <button onclick="updateDetails(1)" class="kw-btn active border-2 border-slate-200 p-4 rounded-2xl font-bold transition-all hover:border-orange-500">1 kW</button>
-                <button onclick="updateDetails(2)" class="kw-btn border-2 border-slate-200 p-4 rounded-2xl font-bold transition-all hover:border-orange-500">2 kW</button>
-                <button onclick="updateDetails(3)" class="kw-btn border-2 border-slate-200 p-4 rounded-2xl font-bold transition-all hover:border-orange-500">3 kW</button>
-                <button onclick="updateDetails(4)" class="kw-btn border-2 border-slate-200 p-4 rounded-2xl font-bold transition-all hover:border-orange-500">4 kW</button>
-                <button onclick="updateDetails(5)" class="kw-btn border-2 border-slate-200 p-4 rounded-2xl font-bold transition-all hover:border-orange-500">5 kW</button>
-                <button onclick="updateDetails(10)" class="kw-btn border-2 border-slate-200 p-4 rounded-2xl font-bold transition-all hover:border-orange-500">10 kW</button>
+    <!-- SUBSIDY CALCULATOR (ASSAM SPECIFIC) -->
+    <section id="calc" class="py-24 px-6 relative -mt-10">
+        <div class="max-w-5xl mx-auto bg-white rounded-[3rem] shadow-2xl border border-slate-100 p-8 md:p-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black text-blue-950">Assam Subsidy Estimator</h2>
+                <p class="text-slate-500 mt-2">Choose your plant size (kW) to see the Central + Assam State benefit</p>
+            </div>
+            
+            <div class="grid grid-cols-3 md:grid-cols-6 gap-4 mb-12" id="kwSelector">
+                <button onclick="update(1)" class="kw-btn active border-2 border-slate-100 p-5 rounded-2xl font-bold text-lg transition-all">1kW</button>
+                <button onclick="update(2)" class="kw-btn border-2 border-slate-100 p-5 rounded-2xl font-bold text-lg transition-all">2kW</button>
+                <button onclick="update(3)" class="kw-btn border-2 border-slate-100 p-5 rounded-2xl font-bold text-lg transition-all">3kW</button>
+                <button onclick="update(4)" class="kw-btn border-2 border-slate-100 p-5 rounded-2xl font-bold text-lg transition-all">4kW</button>
+                <button onclick="update(5)" class="kw-btn border-2 border-slate-100 p-5 rounded-2xl font-bold text-lg transition-all">5kW</button>
+                <button onclick="update(10)" class="kw-btn border-2 border-slate-100 p-5 rounded-2xl font-bold text-lg transition-all">10kW</button>
             </div>
 
-            <!-- Results Card -->
-            <div class="bg-white rounded-[2.5rem] shadow-xl overflow-hidden border border-slate-100">
-                <div class="grid md:grid-cols-3">
-                    <div class="p-8 md:p-12 md:col-span-2 space-y-8">
-                        <div>
-                            <h3 class="text-sm font-bold uppercase text-slate-400 tracking-widest mb-2">Government Subsidy</h3>
-                            <p class="text-6xl font-extrabold text-orange-600" id="subsidyLabel">₹30,000</p>
-                            <p class="text-slate-400 mt-2 italic text-sm">*Direct bank transfer within 30 days of installation.</p>
-                        </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-8 rounded-3xl">
+                    <p class="text-blue-600 font-bold text-xs uppercase tracking-widest">National Subsidy</p>
+                    <p class="text-3xl font-black text-blue-900 mt-2" id="natSub">₹30,000</p>
+                </div>
+                <div class="bg-orange-50 p-8 rounded-3xl border-2 border-orange-100">
+                    <p class="text-orange-600 font-bold text-xs uppercase tracking-widest">Assam State Support</p>
+                    <p class="text-3xl font-black text-orange-600 mt-2" id="stateSub">APDCL Priority</p>
+                </div>
+                <div class="bg-green-600 p-8 rounded-3xl text-white shadow-xl shadow-green-200">
+                    <p class="text-green-100 font-bold text-xs uppercase tracking-widest text-center">Your Monthly Savings</p>
+                    <p class="text-4xl font-black mt-2 text-center" id="saveVal">₹950+</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a id="waLink" href="https://wa.me/91YOUR_PHONE_NUMBER" class="inline-block bg-green-500 text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-green-600 shadow-xl transition-all">Book Free Site Survey in Assam</a>
+            </div>
+        </div>
+    </section>
 
-                        <div class="grid grid-cols-2 gap-6 pt-4">
-                            <div>
-                                <p class="text-xs font-bold text-slate-400 uppercase tracking-tighter">Monthly Savings</p>
-                                <p class="text-2xl font-bold text-blue-900" id="savingsLabel">₹800 - 1,000</p>
-                            </div>
-                            <div>
-                                <p class="text-xs font-bold text-slate-400 uppercase tracking-tighter">Roof Area Needed</p>
-                                <p class="text-2xl font-bold text-blue-900" id="areaLabel">100 Sq. Ft.</p>
-                            </div>
+    <!-- WHY CHOOSE US -->
+    <section id="benefits" class="py-20 px-6 bg-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-black text-center text-blue-950 mb-16">Why Choose Us?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">APDCL Approved</h3>
+                    <p class="text-slate-500">Official empaneled vendor for Assam Power Distribution Company Limited. Hassle-free Net Metering.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 mb-6 group-hover:bg-orange-600 group-hover:text-white transition-all">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">DCR Quality Panels</h3>
+                    <p class="text-slate-500">We only use "Made in India" DCR modules as per MNRE guidelines to ensure you get your subsidy.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6 group-hover:bg-green-600 group-hover:text-white transition-all">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Local Assam Support</h3>
+                    <p class="text-slate-500">Based in Assam. Quick service and maintenance within 24-48 hours of any issue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR WORKS -->
+    <section id="works" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-black text-center text-blue-950 mb-16">Our Installations in Assam</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-3xl h-80 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8 text-white">
+                        <div>
+                            <p class="text-sm font-bold text-orange-400">3kW - Guwahati</p>
+                            <h4 class="text-xl font-bold">Residential Rooftop</h4>
                         </div>
                     </div>
-
-                    <!-- CTA Side -->
-                    <div class="bg-blue-950 p-8 md:p-12 flex flex-col justify-center items-center text-center text-white">
-                        <p class="text-blue-300 text-sm font-bold uppercase mb-4">Ready to install?</p>
-                        <a id="waButton" href="https://wa.me/91YOUR_PHONE_NUMBER?text=Interested in 1kW Solar" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-5 rounded-2xl transition-transform hover:scale-105 shadow-xl inline-block text-xl">
-                            Request Callback
-                        </a>
-                        <p class="mt-6 text-xs text-blue-300 opacity-60 italic">Free site survey & feasibility check included.</p>
+                </div>
+                <div class="group relative overflow-hidden rounded-3xl h-80 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8 text-white">
+                        <div>
+                            <p class="text-sm font-bold text-orange-400">5kW - Dibrugarh</p>
+                            <h4 class="text-xl font-bold">Zero-Bill Home</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-3xl h-80 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1548613053-220ef3982403?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8 text-white">
+                        <div>
+                            <p class="text-sm font-bold text-orange-400">2kW - Jorhat</p>
+                            <h4 class="text-xl font-bold">Standard Subsidy Plant</h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-10 border-t border-slate-200">
-        <p class="font-bold text-blue-950 tracking-wide">YOUR COMPANY NAME</p>
-        <p class="text-sm text-slate-400">PMSG Authorized Vendor ID: YOUR-ID-12345</p>
+    <!-- FOOTER -->
+    <footer class="bg-blue-950 text-white py-16 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 border-b border-white/10 pb-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Assam Solar Solutions</h3>
+                <p class="text-blue-200/60 max-w-sm">Leading the green energy revolution in Assam under the PM Surya Ghar Muft Bijli Yojana.</p>
+                <div class="mt-8 flex gap-4">
+                    <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">FB</div>
+                    <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">IN</div>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <p class="font-bold text-lg">Contact Us</p>
+                <p class="text-blue-200/60">Email: info@yourassamsolar.com</p>
+                <p class="text-blue-200/60 text-sm">Vendor ID: AS-PMSG-XXXXX (Authorized by APDCL)</p>
+            </div>
+        </div>
+        <p class="text-center mt-10 text-xs text-blue-200/30 font-bold uppercase tracking-widest italic">Government Empaneled Partner for Assam</p>
     </footer>
 
     <script>
-        function updateDetails(kw) {
-            // Update button styles
+        function update(kw) {
+            // Button Styling
             const buttons = document.querySelectorAll('.kw-btn');
             buttons.forEach(btn => {
                 btn.classList.remove('active');
-                if(btn.innerText.includes(kw + ' kW')) btn.classList.add('active');
+                if(btn.innerText === kw + 'kW') btn.classList.add('active');
             });
 
-            // PMSG Subsidy Logic (Updated 2024-25)
-            let subsidy = 0;
-            if(kw === 1) subsidy = 30000;
-            else if(kw === 2) subsidy = 60000;
-            else if(kw >= 3) subsidy = 78000;
+            // Subsidy Logic (PMSG 2024-25)
+            let natSub = 0;
+            if(kw === 1) natSub = 30000;
+            else if(kw === 2) natSub = 60000;
+            else if(kw >= 3) natSub = 78000;
 
             // Update UI
-            document.getElementById('subsidyLabel').innerText = `₹${subsidy.toLocaleString('en-IN')}`;
-            document.getElementById('savingsLabel').innerText = `₹${(kw * 850).toLocaleString('en-IN')} - ${(kw * 1050).toLocaleString('en-IN')}`;
-            document.getElementById('areaLabel').innerText = `${kw * 100} Sq. Ft.`;
+            document.getElementById('natSub').innerText = `₹${natSub.toLocaleString('en-IN')}`;
+            document.getElementById('saveVal').innerText = `₹${(kw * 950).toLocaleString('en-IN')}+`;
+            
+            // State Message
+            const stateSub = document.getElementById('stateSub');
+            if(kw <= 3) {
+                stateSub.innerText = "Full Assam Priority";
+            } else {
+                stateSub.innerText = "Standard PMSG";
+            }
 
-            // Update WhatsApp Link
-            const phone = "91YOUR_PHONE_NUMBER"; // <--- CHANGE THIS
-            const msg = encodeURIComponent(`Hi! I'm interested in the PM Surya Ghar Yojana. Please give me a quote for a ${kw}kW system for my home.`);
-            document.getElementById('waButton').href = `https://wa.me/${phone}?text=${msg}`;
+            // WhatsApp link update
+            const phone = "91YOUR_PHONE_NUMBER"; // <--- PUT YOUR NUMBER HERE
+            const msg = encodeURIComponent(`Hi! I'm from Assam and interested in a ${kw}kW Solar plant under PM Surya Ghar. Please call me for a survey.`);
+            document.getElementById('waLink').href = `https://wa.me/${phone}?text=${msg}`;
         }
     </script>
 </body>
