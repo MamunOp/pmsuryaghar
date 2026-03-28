@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Surya Ghar Vendor | Authorized Solar Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 p-4">
+        <div class="max-w-6xl mx-auto glass border border-white/20 rounded-2xl p-4 flex justify-between items-center shadow-lg">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold italic text-xl">S</div>
+                <span class="font-bold text-xl tracking-tight text-blue-900">SOLAR<span class="text-orange-500 font-black">GHAR</span></span>
+            </div>
+            <a href="https://wa.me/91YOUR_PHONE_NUMBER" class="bg-blue-900 text-white px-5 py-2 rounded-xl font-bold hover:bg-orange-500 transition shadow-md text-sm">Free Survey</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <span class="bg-orange-100 text-orange-600 px-4 py-1 rounded-full text-xs font-bold uppercase">Government Empaneled Vendor</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-blue-950 mt-6 leading-tight">
+                Zero Electricity Bill <br> <span class="text-orange-500">Starts Here.</span>
+            </h1>
+            <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+                Authorized partner for **PM Surya Ghar Yojana**. Get up to ₹78,000 subsidy directly in your bank account.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#calc" class="bg-orange-500 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition">Calculate My Subsidy</a>
+                <div class="flex items-center gap-2 text-blue-900 font-bold border-2 border-blue-900/10 px-6 py-4 rounded-2xl">
+                    <span>5-Year Warranty Guarantee</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Calculator Section -->
+    <section id="calc" class="py-16 px-6">
+        <div class="max-w-4xl mx-auto bg-white rounded-[2.5rem] shadow-2xl p-8 md:p-12 border border-slate-100">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-10 tracking-tight">Solar Savings Estimator</h2>
+            <div class="space-y-10">
+                <div>
+                    <label class="block text-gray-500 font-medium mb-4">Monthly Bill: <span id="billVal" class="text-blue-600 font-black text-2xl ml-2">₹2000</span></label>
+                    <input type="range" min="500" max="10000" step="500" value="2000" id="billRange" class="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-orange-500">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 text-center">
+                        <p class="text-xs text-gray-400 uppercase font-bold tracking-widest">System Size</p>
+                        <p id="systemSize" class="text-3xl font-black text-blue-900 mt-2">2.5 kW</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-3xl border border-orange-100 text-center">
+                        <p class="text-xs text-orange-400 uppercase font-bold tracking-widest">Govt Subsidy</p>
+                        <p id="subsidyAmt" class="text-3xl font-black text-orange-600 mt-2">₹60,000</p>
+                    </div>
+                    <div class="bg-blue-900 p-6 rounded-3xl text-center shadow-lg">
+                        <p class="text-xs text-blue-300 uppercase font-bold tracking-widest">Monthly Saving</p>
+                        <p id="monthlySave" class="text-3xl font-black text-white mt-2">₹1,800</p>
+                    </div>
+                </div>
+                <a id="waLink" href="https://wa.me/91YOUR_PHONE_NUMBER?text=Hi, I want to install a 2.5kW solar plant" class="block w-full text-center bg-green-500 text-white font-bold py-5 rounded-2xl text-xl shadow-lg hover:bg-green-600 transition">Get Free Quote on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-400 text-sm">
+        <p>© 2024 Your Company Name | PM Surya Ghar Authorized Vendor</p>
+        <p class="mt-2 text-xs uppercase tracking-tighter font-bold">Registration No: VENDOR-ID-XXXX</p>
+    </footer>
+
+    <script>
+        const range = document.getElementById('billRange');
+        const billVal = document.getElementById('billVal');
+        const systemSize = document.getElementById('systemSize');
+        const subsidyAmt = document.getElementById('subsidyAmt');
+        const monthlySave = document.getElementById('monthlySave');
+        const waLink = document.getElementById('waLink');
+
+        range.addEventListener('input', (e) => {
+            const bill = e.target.value;
+            billVal.innerText = `₹${bill}`;
+            
+            // Logic based on Govt Rules
+            const units = bill / 7;
+            const kw = (units / 120).toFixed(1);
+            let subsidy = 0;
+            if (kw <= 2) subsidy = kw * 30000;
+            else if (kw <= 3) subsidy = 60000 + (kw - 2) * 18000;
+            else subsidy = 78000;
+
+            systemSize.innerText = `${kw} kW`;
+            subsidyAmt.innerText = `₹${Math.round(subsidy).toLocaleString()}`;
+            monthlySave.innerText = `₹${Math.round(bill * 0.9).toLocaleString()}`;
+            
+            waLink.href = `https://wa.me/91YOUR_PHONE_NUMBER?text=Hi, I am interested in a ${kw}kW PM Surya Ghar plant. My monthly bill is ₹${bill}.`;
+        });
+    </script>
+</body>
+</html>
