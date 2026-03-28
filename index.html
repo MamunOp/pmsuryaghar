@@ -308,75 +308,63 @@
         </div>
     </div>
 </section>
-  <div class="relative">
+  <div class="flex flex-col gap-6 md:grid md:grid-cols-6 md:gap-6">
 
-    <!-- Vertical line (mobile) -->
-    <div class="absolute left-6 top-0 h-full w-[2px] bg-slate-200 md:hidden"></div>
-
-    <div class="flex flex-col gap-6 md:grid md:grid-cols-5 md:gap-6">
-
-        <!-- Step 1 -->
-        <div class="flex items-center md:block text-left md:text-center relative z-10">
-            <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center font-bold text-lg shadow-sm z-10">
-                1
-            </div>
-            <div class="ml-4 md:ml-0 md:mt-2">
-                <h5 class="font-semibold text-sm">Survey</h5>
-                <p class="text-xs text-slate-500">Day 1</p>
-            </div>
+    <!-- Step 1 -->
+    <div class="flex items-center md:block text-left md:text-center relative z-10">
+        <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center font-bold text-lg shadow-sm">1</div>
+        <div class="ml-4 md:ml-0 md:mt-2">
+            <h5 class="font-semibold text-sm">Survey</h5>
+            <p class="text-xs text-slate-500">Day 1</p>
         </div>
-
-        <!-- Step 2 -->
-        <div class="flex items-center md:block text-left md:text-center relative z-10">
-            <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center font-bold text-lg shadow-sm">
-                2
-            </div>
-            <div class="ml-4 md:ml-0 md:mt-2">
-                <h5 class="font-semibold text-sm">Approval</h5>
-                <p class="text-xs text-slate-500">Day 3</p>
-            </div>
-        </div>
-
-        <!-- Step 3 (Active) -->
-        <div class="flex items-center md:block text-left md:text-center relative z-10">
-            <div class="w-12 h-12 bg-orange-500 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-md">
-                3
-            </div>
-            <div class="ml-4 md:ml-0 md:mt-2">
-                <h5 class="font-semibold text-sm">Installation</h5>
-                <p class="text-xs text-slate-500">Day 7</p>
-            </div>
-        </div>
-
-        <!-- Step 4 -->
-        <div class="flex items-center md:block text-left md:text-center relative z-10">
-            <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center font-bold text-lg shadow-sm">
-                4
-            </div>
-            <div class="ml-4 md:ml-0 md:mt-2">
-                <h5 class="font-semibold text-sm">Net Meter</h5>
-                <p class="text-xs text-slate-500">Day 15</p>
-            </div>
-        </div>
-
-        <!-- Step 5 -->
-        <div class="flex items-center md:block text-left md:text-center relative z-10">
-            <div class="w-12 h-12 bg-green-500 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-md">
-                5
-            </div>
-            <div class="ml-4 md:ml-0 md:mt-2">
-                <h5 class="font-semibold text-sm">Subsidy</h5>
-                <p class="text-xs text-slate-500">Day 30</p>
-            </div>
-        </div>
-
     </div>
 
-    <!-- Horizontal line (desktop only) -->
-    <div class="hidden md:block absolute top-6 left-0 w-full h-[2px] bg-slate-200"></div>
+    <!-- Step 2 -->
+    <div class="flex items-center md:block text-left md:text-center relative z-10">
+        <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center font-bold text-lg shadow-sm">2</div>
+        <div class="ml-4 md:ml-0 md:mt-2">
+            <h5 class="font-semibold text-sm">Approval</h5>
+            <p class="text-xs text-slate-500">Day 3</p>
+        </div>
+    </div>
+
+    <!-- NEW STEP -->
+    <div class="flex items-center md:block text-left md:text-center relative z-10">
+        <div class="w-12 h-12 bg-blue-500 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-md">3</div>
+        <div class="ml-4 md:ml-0 md:mt-2">
+            <h5 class="font-semibold text-sm">Loan / Cash</h5>
+            <p class="text-xs text-slate-500">Day 4</p>
+        </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="flex items-center md:block text-left md:text-center relative z-10">
+        <div class="w-12 h-12 bg-orange-500 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-md">4</div>
+        <div class="ml-4 md:ml-0 md:mt-2">
+            <h5 class="font-semibold text-sm">Installation</h5>
+            <p class="text-xs text-slate-500">Day 7</p>
+        </div>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="flex items-center md:block text-left md:text-center relative z-10">
+        <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center font-bold text-lg shadow-sm">5</div>
+        <div class="ml-4 md:ml-0 md:mt-2">
+            <h5 class="font-semibold text-sm">Net Meter</h5>
+            <p class="text-xs text-slate-500">Day 15</p>
+        </div>
+    </div>
+
+    <!-- Step 6 -->
+    <div class="flex items-center md:block text-left md:text-center relative z-10">
+        <div class="w-12 h-12 bg-green-500 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-md">6</div>
+        <div class="ml-4 md:ml-0 md:mt-2">
+            <h5 class="font-semibold text-sm">Subsidy</h5>
+            <p class="text-xs text-slate-500">Day 30</p>
+        </div>
+    </div>
 
 </div>
-
     <!-- PROOF SECTION (TRUST) -->
     <section id="works" class="py-24 px-6 bg-slate-100">
         <div class="max-w-6xl mx-auto">
