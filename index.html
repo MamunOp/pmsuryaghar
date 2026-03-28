@@ -22,24 +22,38 @@
     </div>
 
     <!-- NAVIGATION -->
-    <nav class="sticky top-0 w-full z-50 p-4">
-        <div class="max-w-6xl mx-auto glass rounded-2xl p-4 flex justify-between items-center shadow-sm">
-            <div class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center text-white font-bold text-xl">AS</div>
-                <div>
-                    <span class="block font-black text-blue-900 leading-none text-lg">ASSAM SOLAR</span>
-                    <span class="text-[9px] text-orange-600 font-bold uppercase tracking-widest">Empaneled PMSG Vendor</span>
-                </div>
+<!-- Change "sticky" to "fixed" to ensure it never moves, and reduced top padding -->
+<nav class="fixed top-0 w-full z-50 px-4 py-2"> 
+    <!-- Reduced inner padding from p-4 to py-2 px-4 -->
+    <div class="max-w-6xl mx-auto glass rounded-xl py-2 px-4 flex justify-between items-center shadow-md">
+        
+        <!-- Logo Section -->
+        <div class="flex items-center gap-2">
+            <!-- Shrunk icon from w-10 h-10 to w-8 h-8 -->
+            <div class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-sm">AS</div>
+            
+            <div class="leading-tight">
+                <!-- Shrunk font from text-lg to text-sm -->
+                <span class="block font-black text-blue-900 text-sm tracking-tight uppercase">ASSAM SOLAR</span>
+                <!-- Shrunk subtext to text-[7px] -->
+                <span class="block text-[7px] text-orange-600 font-bold uppercase tracking-[0.1em] -mt-0.5">Empaneled PMSG Vendor</span>
             </div>
-            <div class="hidden lg:flex gap-6 font-bold text-sm text-slate-600 uppercase">
-                <a href="#pricing" class="hover:text-orange-500">Price</a>
-                <a href="#process" class="hover:text-orange-500">How it works</a>
-                <a href="#works" class="hover:text-orange-500">Our Proof</a>
-                <a href="#faq" class="hover:text-orange-500">Doubts?</a>
-            </div>
-            <a href="https://wa.me/919876543210" class="bg-blue-950 text-white px-5 py-2.5 rounded-xl font-bold text-xs hover:bg-orange-600 transition shadow-lg">WHATSAPP SURVEY</a>
         </div>
-    </nav>
+
+        <!-- Desktop Menu (Smaller text) -->
+        <div class="hidden lg:flex gap-5 font-bold text-[10px] text-slate-500 uppercase tracking-wider">
+            <a href="#pricing" class="hover:text-orange-500 transition">Price</a>
+            <a href="#process" class="hover:text-orange-500 transition">Process</a>
+            <a href="#works" class="hover:text-orange-500 transition">Proof</a>
+            <a href="#faq" class="hover:text-orange-500 transition">FAQ</a>
+        </div>
+
+        <!-- Compact Button -->
+        <a href="https://wa.me/919876543210" class="bg-blue-950 text-white px-4 py-2 rounded-lg font-bold text-[10px] hover:bg-orange-500 transition shadow-sm uppercase">
+            WhatsApp
+        </a>
+    </div>
+</nav>
 
     <!-- HERO SECTION -->
     <header class="pt-16 pb-20 px-6">
